@@ -2,7 +2,11 @@
   <div id="app">
     <main>
       <div class="search-box">
-        <input type="text" class="search-bar" placeholder="Search..." />
+        <input 
+        type="text" 
+        class="search-bar" 
+        placeholder="Search..." 
+        />
       </div>
 
       <div class="weather-wrap">
@@ -26,6 +30,9 @@ export default {
   data() {
     return {
       api_key: "41dbca3720e02fc42427ad1fe2655dd6",
+      url_base: "https://api.openweathermap.org/data/2.5/",
+      query: "",
+      weather: {}
     }
   },
 }
